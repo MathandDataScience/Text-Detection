@@ -3,6 +3,7 @@ from pytesseract import Output
 import cv2
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\trcar\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+# change this dir to your install of tesseract
 
 img = cv2.imread("test.jpg")
 img_2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
